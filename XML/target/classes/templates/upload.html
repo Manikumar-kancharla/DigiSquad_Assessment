@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Upload XML</title>
+</head>
+<body>
+    <h2>Upload XML File</h2>
+    <form method="post" enctype="multipart/form-data" action="/upload">
+        <input type="file" name="file" accept=".xml" required><br><br>
+        <label>Optional JSON Save Path:</label>
+        <input type="text" name="filePath" placeholder="e.g., C:/temp/custom_output.json"><br><br>
+        <button type="submit">Upload</button>
+    </form>
+</body>
+</html>
